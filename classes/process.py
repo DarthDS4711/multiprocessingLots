@@ -31,7 +31,9 @@ class Process:
         return self.__number2
 
     def __str__(self):
-        chain = str(self.__numberProgram) + " "+ str(self.__maximumTime) + " " + str(self.__timeTranscurred)
+        chain = "ID: " + str(self.__numberProgram) + " " + \
+                "TME: " + str(self.__maximumTime) + " " + \
+                "TT: " + str(self.__timeTranscurred)
         return chain
 
     def getResult(self):
@@ -41,8 +43,8 @@ class Process:
         self.__result = result
 
     def toStringProcessComplete(self):
-        chain = "ID: " + str(self.__numberProgram) + ", ope: " + \
-            self.__operation + ",result: " + str(self.__result) + ", lot: " + str(self.__numberBatch)
+        chain = "ID: " + str(self.__numberProgram) + "  ope: " + \
+            self.__operation + " result: " + str(self.__result) + " lot: " + str(self.__numberBatch)
         return chain
 
     def setOperation(self, operation):

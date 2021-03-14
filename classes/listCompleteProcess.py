@@ -12,6 +12,7 @@ class ListCompleteProcess:
 
     def printListCompleteOfProcess(self, x, y):
         print(Cursor.UP(y) + Cursor.FORWARD(x) + Fore.GREEN + "Procesos completados")
+        print(Fore.RESET)
         for index in range(0, len(self.__list)):
             print(Cursor.FORWARD(x) + self.__list[index].toStringProcessComplete())
 
